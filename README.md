@@ -51,15 +51,15 @@ newgrp docker
 sudo chmod 666 /var/run/docker.sock
 sudo systemctl restart docker
 
-
-# TO ISNTALL SONARQUBE USING DOCKER RUN BELOW COMMAND  
+**TO ISNTALL SONARQUBE USING DOCKER RUN BELOW COMMAND  **
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
-Real World Scenario: Code Quality Assessment and Continuous Improvement
-Background
+# Real World Scenario: Code Quality Assessment and Continuous Improvement
+
+**Background**
 A software development team is working on a complex web application project with multiple developers contributing code. The team wants to ensure code quality and identify and address any code issues early in the development process. They decide to incorporate SonarQube into their workflow to achieve these goals.
 
-Steps
+**Steps**
 1. Integration with CI/CD Pipeline:
 The team integrates SonarQube into their CI/CD pipeline, ensuring that code analysis is performed automatically with every build. They configure their build tool to trigger SonarQube analysis after the code compilation step.
 
@@ -200,5 +200,5 @@ pipeline {
         }
     }
 }
-Once the pipeline is success you will get the results in sonarqube as below.
+Once the pipeline is success you will get the results in sonarqube.
 
