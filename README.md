@@ -24,8 +24,7 @@ Here are some key features of SonarQube:
 By using SonarQube, development teams can proactively identify and address code issues, improve code maintainability, enhance security, and ensure adherence to coding standards. It helps foster a culture of quality within development teams and promotes the delivery of robust and reliable software.
 
 
-
---- Docker Installation ---
+**--- Docker Installation ---**
 
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
@@ -52,6 +51,7 @@ sudo chmod 666 /var/run/docker.sock
 sudo systemctl restart docker
 
 **TO ISNTALL SONARQUBE USING DOCKER RUN BELOW COMMAND**
+
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
 # Real World Scenario: Code Quality Assessment and Continuous Improvement
