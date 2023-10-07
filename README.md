@@ -187,10 +187,10 @@ pipeline {
                 # Run SonarQube analysis
                 # Make sure you have SonarQube configured in Jenkins and provide the correct SonarQube server credentials
                 
-                
-                
-                # Or using the SonarQube Scanner for Maven:
-                # sh 'mvn sonar:sonar'
+              withSonarQubeEnv('sonar-server') {
+                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Petclinic \
+                    -Dsonar.java.binaries=. \
+                    -Dsonar.projectKey=Petclinic '''
             }
         }
         
